@@ -1,3 +1,5 @@
+import SeparatorLine from '@components/molecules/SeparatorLine/SeparatorLine'
+
 export default function Home() {
     return (
         <>
@@ -9,6 +11,10 @@ export default function Home() {
                 height={24}
                 priority
             /> */}
+            <div>Welcome</div>
+            <div className="h-14">
+                <SeparatorLine color="bg-red-700" />
+            </div>
         </>
     )
 }
