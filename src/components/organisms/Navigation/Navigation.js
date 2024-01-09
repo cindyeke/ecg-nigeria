@@ -7,6 +7,7 @@ import ECGLogo from '@images/ecg-logo.png'
 import { navigationLinks } from '@utilities/navigation'
 import styles from './Navigation.module.css'
 
+
 const Navigation = ({ isVisible }) => {
     const [openHamburger, setOpenHamburger] = useState(false)
     const navContainer = clsx(styles['nav'], {

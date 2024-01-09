@@ -10,6 +10,6 @@
 }
 
 .nav-list-wrapper {
-    @apply w-full absolute top-[80px] ml-[-100%] transition-[margin-left] duration-300 ease-in;
-    @apply flex flex-col pl-10 mt-10 gap-y-10;
+    @apply h-full w-full absolute top-[80px] ml-[-100%] transition-[margin-left] duration-300 ease-in;
+    @apply flex flex-col pl-6 mt-10 gap-y-10 uppercase text-[20px] font-semibold;
 }
