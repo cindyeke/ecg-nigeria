@@ -1,5 +1,4 @@
 import clsx from 'clsx'
-import { useState } from 'react'
 import styles from './Hamburger.module.css'
 
 const Hamburger = ({ isOpen, setIsOpen }) => {

@@ -1,0 +1,40 @@
+.header-wrapper {
+    @apply h-1/4 px-5 w-full flex justify-center items-end;
+    @apply sm:px-10;
+    @apply md:h-2/3 md:relative md:p-0;
+    @apply xl:h-3/4;
+}
+
+.header {
+    @apply flex items-center h-[110px];
+    @apply xs-sm:h-[140px];
+    @apply md:h-full md:w-full;
+}
+
+.logo {
+    @apply w-[70px] h-[70px] xs:w-[100px] xs:h-[100px];
+    @apply md:hidden;
+}
+
+.location-wrapper {
+    @apply flex font-main font-light text-sm text-teal-300 mt-2;
+    @apply xs:text-base;
+    @apply xs-sm:text-lg;
+    @apply md:uppercase md:text-[20px];
+}
+
+.welcome-wrapper {
+    @apply flex flex-col font-secondary w-[200px];
+    @apply xs-sm:w-72;
+    @apply md:w-full md:items-center md:absolute md:h-full md:justify-center md:bg-blue-600/80 md:text-off-white;
+}
+
+.text-one {
+    @apply text-sm font-light xs:text-lg xs-sm:text-xl;
+    @apply md:uppercase md:text-[24px] md:font-thin;
+}
+
+.text-two {
+    @apply font-bold text-[13px] text-blue-500 xs:text-lg xs-sm:text-[22px];
+    @apply md:text-[40px] md:font-bold md:capitalize md:text-off-white;
+}
