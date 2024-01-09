@@ -1,0 +1,15 @@
+.nav {    
+    transition: opacity 0.3s ease, transform 0.3s ease, height 0.4s ease-in;
+    @apply opacity-0 -translate-y-full;
+    @apply h-[80px] fixed top-0 left-0 z-[1000] w-full bg-off-white flex flex-col overflow-hidden;
+    @apply md:hidden;
+}
+
+.visible {
+    @apply opacity-100 transform translate-y-0;
+}
+
+.nav-list-wrapper {
+    @apply w-full absolute top-[80px] ml-[-100%] transition-[margin-left] duration-300 ease-in;
+    @apply flex flex-col pl-10 mt-10 gap-y-10;
+}

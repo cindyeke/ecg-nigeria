@@ -1,0 +1,7 @@
+.hamburger-wrapper {
+    @apply absolute top-[32px] right-5;
+}
+
+.lines {
+    @apply bg-blue-500 block transition-all duration-300 ease-out h-[0.2rem] w-[1.8rem] rounded-sm;
+}

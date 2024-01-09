@@ -1,0 +1,24 @@
+.header-wrapper {
+    @apply h-1/4 px-5 w-full flex justify-center items-end;
+    @apply sm:px-10;
+}
+
+.header {
+    @apply flex items-center h-[110px];
+    @apply xs-sm:h-[140px];
+}
+
+.logo {
+    @apply w-[70px] h-[70px] xs:w-[100px] xs:h-[100px];
+}
+
+.location-wrapper {
+    @apply flex font-main font-light text-sm text-teal-300 mt-2;
+    @apply xs:text-base;
+    @apply xs-sm:text-lg;
+}
+
+.welcome-wrapper {
+    @apply flex flex-col font-secondary w-[200px];
+    @apply xs-sm:w-72;
+}
