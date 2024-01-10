@@ -1,0 +1,5 @@
+.nav-link {
+    @apply border border-blue-500 text-blue-500 font-light font-secondary text-base w-full block py-2 text-center;
+    @apply xs-sm:text-lg xs-sm:py-3;
+    @apply sm:text-xl
+}
