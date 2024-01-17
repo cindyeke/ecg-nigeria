@@ -4,6 +4,7 @@ import { useMediaQuery } from 'react-responsive'
 import MobileFirstPage from '@components/pages/MobileFirstPage/MobileFirstPage'
 import Navigation from '@components/organisms/Navigation/Navigation'
 import HomeHeader from '@components/organisms/HomeHeader/HomeHeader'
+import HomeAboutUs from '@components/organisms/HomeAboutUs/HomeAboutUs'
 
 export default function Home() {
     const [showNav, setShowNav] = useState(false)
@@ -26,12 +27,12 @@ export default function Home() {
     }, [])
 
     return (
-        <div className="max-w-[1536px] md:mx-auto h-full">
+        <div className="md:mx-auto h-full md:overflow-x-hidden">
             <MobileFirstPage />
-            <div className="relative h-full">
+            <div className="relative h-full max-w-[1536px] mx-auto">
                 <Navigation isVisible={showNav} />
                 <HomeHeader className="!hidden md:!flex" />
-                <div id="content" className="h-full bg-gray-400"></div>
+                <HomeAboutUs />
             </div>
         </div>
     )
