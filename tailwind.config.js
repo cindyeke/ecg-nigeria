@@ -19,6 +19,9 @@ module.exports = {
             xs: '320px',
             'xs-sm': '400px',
             ...defaultTheme.screens,
+            '2xl': '1440px',
+            '3xl': '1536px',
+            '4xl': '1920px',
         },
         fontSize: {
             sm: '12px',
@@ -35,6 +38,7 @@ module.exports = {
             'blue-500': '#0026B9',
             'blue-600': '#142D8C',
             'gray-400': '#858585',
+            'gray-900': '#1D1A1A',
         },
     },
     plugins: [],

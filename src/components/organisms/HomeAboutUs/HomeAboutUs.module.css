@@ -1,0 +1,39 @@
+.first-section {
+    @apply text-gray-900 font-light mb-6 flex flex-col gap-y-6 relative;
+    @apply md:px-10 md:mt-10 md:mb-0 md:mx-0 md:h-[450px];
+    @apply lg:mt-14 lg:h-[650px];
+    @apply xl:px-20 xl:gap-y-12;
+}
+
+.ecg-text {
+    @apply text-teal-300 mr-2 md:text-blue-600;
+    @apply md:font-semibold md:text-2xl;
+    @apply lg:text-[30px];
+}
+
+.second-section {
+    @apply md:flex md:px-10;
+    @apply xl:px-20;
+}
+
+.first-section,
+.second-section {
+    @apply text-lg;
+    @apply lg:text-xl;
+}
+
+.first-description {
+    @apply order-2 mx-5;
+    @apply md:w-3/5 md:text-right md:self-end md:mx-0;
+    @apply lg:w-1/2;
+}
+
+.second-description {
+    @apply text-gray-900 font-light my-6 mx-5;
+    @apply md:w-3/5 md:mx-0;
+    @apply lg:w-[53%] lg:mt-14;
+}
+
+@media screen and (min-height: 1280px) and (max-width: 1280px) {
+
+}

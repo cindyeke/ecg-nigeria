@@ -10,7 +10,7 @@ const HomeHeader = ({ className, displaySeparatorLine = false }) => {
     const mobileHeaderWrapperStyle = clsx(styles['header-wrapper'], className)
 
     return (
-        <div className={mobileHeaderWrapperStyle}>
+        <header className={mobileHeaderWrapperStyle}>
             <div className={styles.header}>
                 <Image src={ECGLogo} alt="logo" className={styles.logo} />
                 {displaySeparatorLine && (
@@ -37,7 +37,7 @@ const HomeHeader = ({ className, displaySeparatorLine = false }) => {
                     </span>
                 </div>
             </div>
-        </div>
+        </header>
     )
 }
 
