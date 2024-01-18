@@ -1,0 +1,56 @@
+.upcoming-events-section {
+    @apply flex flex-col pb-5 px-5 pt-16;
+    @apply md:px-10;
+    @apply xl:px-20;
+}
+
+.upcoming-events-wrapper {
+    @apply mt-10 flex flex-col gap-y-10;
+    @apply md:grid md:grid-cols-2 md:gap-x-5;
+    @apply lg:gap-x-10;
+    @apply xl:grid-cols-3 xl:gap-x-5;
+    @apply 2xl:gap-x-10 2xl:mt-20;
+}
+
+.upcoming-event {
+    @apply bg-dim-white overflow-hidden pb-6;
+    @apply rounded-[10px];
+    @apply xs:pb-10;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.content-wrapper {
+    @apply mb-5 pt-[35px] px-5 text-blue-600 h-[270px] flex flex-col justify-between;
+    @apply xs:px-8 xs:pt-[60px] xs:h-[350px];
+    @apply xs-sm:px-10;
+    @apply md:px-6;
+    @apply lg:px-10;
+}
+
+.date-wrapper {
+    @apply flex flex-col bg-blue-600/50 rounded-[50%] w-[60px] h-[60px] justify-center items-center;
+    @apply xs:w-[75px] xs:h-[75px] 
+}
+
+.date-wrapper span:first-child {
+    @apply text-xl font-bold h-[23px];
+    @apply xs:text-3xl xs:h-[35px];
+}
+
+.date-wrapper span:nth-child(2) {
+    @apply font-light text-lg uppercase;
+    @apply xs:text-xl;
+}
+
+.event-description {
+    @apply text-xl font-light w-[125px] line-clamp-[7];
+    @apply xs:text-2xl xs:w-[170px];
+    @apply xs-sm:w-[200px] xs-sm:text-3xl xs-sm:-mt-2 xs-sm:line-clamp-6;
+    @apply min-[500px]:mt-[2px] min-[500px]:w-[312px];
+    @apply sm:w-[380px] sm:line-clamp-5;
+    @apply md:mt-[-4px] md:w-[200px];
+    @apply lg:w-[260px];
+    @apply xl:w-[185px];
+    @apply 2xl:w-[225px];
+    @apply 3xl:w-[245px];
+}
