@@ -6,6 +6,7 @@ import Navigation from '@components/organisms/Navigation/Navigation'
 import HomeHeader from '@components/organisms/HomeHeader/HomeHeader'
 import HomeAboutUs from '@components/organisms/HomeAboutUs/HomeAboutUs'
 import ServiceTimes from '@components/organisms/ServiceTimes/ServiceTimes'
+import UpcomingEvents from '@components/organisms/UpcomingEvents/UpcomingEvents'
 
 export default function Home() {
     const [showNav, setShowNav] = useState(false)
@@ -35,6 +36,7 @@ export default function Home() {
                 <HomeHeader className="!hidden md:!flex" />
                 <HomeAboutUs />
                 <ServiceTimes />
+                <UpcomingEvents />
             </div>
         </div>
     )

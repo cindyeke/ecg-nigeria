@@ -33,10 +33,12 @@ module.exports = {
         },
         colors: {
             white: '#FFFFFF',
+            'dim-white': '#F8F8F8',
             'off-white': '#F0F0F0',
             'teal-300': '#79B5B8',
             'blue-500': '#0026B9',
             'blue-600': '#142D8C',
+            'gray-200': '#D3CCCC',
             'gray-400': '#858585',
             'gray-900': '#1D1A1A',
         },
