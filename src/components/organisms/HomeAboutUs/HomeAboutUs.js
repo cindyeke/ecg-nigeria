@@ -8,7 +8,7 @@ const firstImageStyle =
     'md:w-[350px] md:h-[350px] md:-left-7 md:bottom-0 lg:w-[500px] lg:h-[500px] lg:-left-20 xl:left-0'
 
 const secondImageStyle =
-    'md:w-[350px] md:h-[350px] md:-right-[45px] md:-bottom-[60px] lg:w-[500px] lg:h-[500px] lg:-right-[60px] xl:right-0 2xl:right-[40px]'
+    'md:w-[350px] md:h-[350px] md:-right-[45px] md:-bottom-[85px] lg:w-[500px] lg:h-[500px] lg:-right-[60px] xl:right-0 2xl:right-[40px] z-10'
 
 const HomeAboutUs = () => {
     return (

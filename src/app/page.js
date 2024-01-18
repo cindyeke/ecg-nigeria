@@ -5,6 +5,7 @@ import MobileFirstPage from '@components/pages/MobileFirstPage/MobileFirstPage'
 import Navigation from '@components/organisms/Navigation/Navigation'
 import HomeHeader from '@components/organisms/HomeHeader/HomeHeader'
 import HomeAboutUs from '@components/organisms/HomeAboutUs/HomeAboutUs'
+import ServiceTimes from '@components/organisms/ServiceTimes/ServiceTimes'
 
 export default function Home() {
     const [showNav, setShowNav] = useState(false)
@@ -33,6 +34,7 @@ export default function Home() {
                 <Navigation isVisible={showNav} />
                 <HomeHeader className="!hidden md:!flex" />
                 <HomeAboutUs />
+                <ServiceTimes />
             </div>
         </div>
     )

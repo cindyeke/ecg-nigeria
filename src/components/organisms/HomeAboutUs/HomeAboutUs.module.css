@@ -8,7 +8,7 @@
 .ecg-text {
     @apply text-teal-300 mr-2 md:text-blue-600;
     @apply md:font-semibold md:text-2xl;
-    @apply lg:text-[30px];
+    @apply lg:text-3xl;
 }
 
 .second-section {
@@ -29,11 +29,7 @@
 }
 
 .second-description {
-    @apply text-gray-900 font-light my-6 mx-5;
-    @apply md:w-3/5 md:mx-0;
+    @apply text-gray-900 font-light my-6 mx-5 mb-10;
+    @apply md:w-3/5 md:mx-0 md:mb-0;
     @apply lg:w-[53%] lg:mt-14;
-}
-
-@media screen and (min-height: 1280px) and (max-width: 1280px) {
-
 }

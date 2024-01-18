@@ -1,0 +1,18 @@
+.diagonal-section {
+    @apply bg-teal-300 flex flex-col pb-5 px-5 pt-10;
+    @apply md:h-[500px] md:pt-32 md:px-10;
+    @apply lg:h-[650px];
+    @apply xl:h-[700px] xl:pt-40 xl:px-20;
+}
+
+.service-info {
+    @apply uppercase flex justify-between text-lg tracking-[2px] mb-7;
+    @apply md:flex-col md:text-right md:items-end md:justify-start;
+    @apply lg:text-2xl;
+}
+
+@media screen and (min-width: 768px){
+    .diagonal-section {
+        clip-path: polygon(0 32%, 100% 0, 100% 64%, 0 100%);
+    }
+}
