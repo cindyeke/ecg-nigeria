@@ -15,7 +15,7 @@ const BranchLocation = () => {
     })
 
     return (
-        <section className="mt-12 relative h-[500px] md:h-[700px] md:mt-32 xl:h-[800px]">
+        <section className="pt-12 relative h-[500px] md:h-[700px] md:pt-32 xl:h-[800px] bg-dim-white">
             <BranchMapImage selectedBranch={selectedBranch} />
             <ScrollContainer className={styles['branches-info-section']}>
                 {branchesInformation.map(
