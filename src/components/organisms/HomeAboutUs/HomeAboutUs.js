@@ -12,7 +12,7 @@ const secondImageStyle =
 
 const HomeAboutUs = () => {
     return (
-        <section className="relative">
+        <section className="relative bg-dim-white">
             <div className={styles['first-section']}>
                 <div className="order-1 mx-5 md:w-3/5 md:mx-0">
                     <span className={styles['ecg-text']}>ECG TJNC Nigeria</span>

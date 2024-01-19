@@ -1,5 +1,5 @@
 .upcoming-events-section {
-    @apply flex flex-col pb-5 px-5 pt-16;
+    @apply flex flex-col pb-5 px-5 pt-16 bg-dim-white;
     @apply md:px-10;
     @apply xl:px-20;
 }
