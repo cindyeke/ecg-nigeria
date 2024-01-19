@@ -21,7 +21,7 @@
 .form input,
 .form textarea {
     @apply  border-b border-[#000] outline-none w-full placeholder-gray-900 bg-[transparent] pb-2;
-    @apply focus:border-teal-300;
+    @apply focus:border-teal-300 rounded-none;
 }
 
 .form textarea {
