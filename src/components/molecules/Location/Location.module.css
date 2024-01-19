@@ -1,0 +1,6 @@
+.location-wrapper {
+    @apply flex font-main font-light text-sm text-teal-300 mt-2;
+    @apply xs:text-base;
+    @apply xs-sm:text-lg;
+    @apply md:uppercase md:text-xl;
+}

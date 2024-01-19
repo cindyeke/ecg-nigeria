@@ -1,0 +1,41 @@
+.header-wrapper {
+    @apply h-1/4 px-5 w-full flex justify-center items-end;
+    @apply sm:px-10;
+    @apply md:h-2/3 md:relative md:p-0;
+    @apply lg:h-4/5;
+    @apply xl:h-3/4;
+    @apply 4xl:h-3/5;
+}
+
+.header {
+    @apply flex items-center h-[110px];
+    @apply xs-sm:h-[140px];
+    @apply md:h-full md:w-full;
+}
+
+.logo {
+    @apply w-[70px] h-[70px] xs:w-[100px] xs:h-[100px];
+    @apply md:hidden;
+}
+
+.welcome-wrapper {
+    @apply flex flex-col font-secondary w-[200px];
+    @apply xs-sm:w-[250px];
+    @apply md:w-full md:items-center md:absolute md:h-full md:justify-center md:bg-blue-600/80 md:text-off-white;
+}
+
+.text-one {
+    @apply text-sm font-light xs:text-lg xs-sm:text-xl;
+    @apply md:uppercase md:text-2xl md:font-thin;
+}
+
+.text-two {
+    @apply font-bold text-[13px] text-blue-500 xs:text-lg xs-sm:text-[22px] uppercase;
+    @apply md:text-[40px] md:font-bold md:capitalize md:text-off-white;
+}
+
+@media screen and (min-height: 1280px) and (max-width: 1280px) {
+    .header-wrapper{
+        @apply h-1/2;
+    }
+}

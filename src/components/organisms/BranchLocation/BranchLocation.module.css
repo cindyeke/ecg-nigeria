@@ -1,0 +1,28 @@
+.branches-info-section {
+    @apply w-[250px] h-[150px] px-6 rounded-[10px] border-2 border-teal-300 bg-dim-white;
+    @apply flex absolute top-1/2 transform -translate-y-1/2 left-1/2 -translate-x-1/2;
+    @apply xs-sm:w-9/12 xs-sm:h-[170px];
+    @apply md:w-[600px];
+    @apply xl:h-[200px] xl:w-[690px]; 
+}
+
+.description {
+    @apply bg-teal-300 h-1/2 flex flex-col justify-center items-center pt-20 text-base px-5 text-gray-900;
+}
+
+.description b {
+    @apply text-blue-500 font-bold mr-1;
+}
+
+.description span {
+    @apply font-light text-base;
+    @apply xs-sm:text-lg;
+    @apply md:text-xl;
+    @apply xl:text-2xl;
+}
+
+.address-wrapper {
+    @apply flex flex-col justify-center items-center w-[150px] flex-shrink-0;
+    @apply sm:w-[170px];
+    @apply xl:w-[200px] xl:px-1;
+}

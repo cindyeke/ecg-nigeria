@@ -1,0 +1,17 @@
+.nav {    
+    transition: opacity 0.3s ease, transform 0.3s ease, height 0.4s ease-in;
+    @apply opacity-0 -translate-y-full;
+    @apply h-[80px] fixed top-0 left-0 z-[1000] w-full bg-off-white flex flex-col overflow-hidden;
+    @apply md:max-w-[1536px] md:mx-auto md:left-auto;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.visible {
+    @apply opacity-100 transform translate-y-0;
+}
+
+.nav-list-wrapper {
+    @apply h-full w-full absolute top-[80px] ml-[-100%] transition-[margin-left] duration-300 ease-in;
+    @apply flex flex-col pl-6 mt-10 gap-y-10 uppercase text-xl font-semibold;
+    @apply md:w-auto md:h-auto md:!ml-0 md:relative md:top-0 md:mt-0 md:flex-row md:pl-0 md:text-base md:font-normal md:gap-x-10 md:mr-10;
+}
