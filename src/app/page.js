@@ -31,7 +31,7 @@ export default function Home() {
     }, [])
 
     return (
-        <div className="md:mx-auto h-full md:overflow-x-hidden">
+        <div className="md:mx-auto h-full md:overflow-x-hidden bg-dim-white">
             <MobileFirstPage />
             <div className="relative h-full max-w-[1536px] mx-auto">
                 <Navigation isVisible={showNav} />
