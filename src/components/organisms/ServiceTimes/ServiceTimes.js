@@ -5,15 +5,17 @@ import styles from './ServiceTimes.module.css'
 
 const ServiceTimes = () => {
     return (
-        <section className={styles['diagonal-section']}>
-            <SectionTitle
-                title="Service Times"
-                className="md:m-0 md:text-right"
-            />
-            <div className="mt-10 md:grid md:grid-cols-2">
-                {services.map(({ id, name, time }) => (
-                    <ServiceInformation key={id} name={name} time={time} />
-                ))}
+        <section className="bg-dim-white">
+            <div className={styles['diagonal-section']}>
+                <SectionTitle
+                    title="Service Times"
+                    className="md:m-0 md:text-right"
+                />
+                <div className="mt-10 md:grid md:grid-cols-2">
+                    {services.map(({ id, name, time }) => (
+                        <ServiceInformation key={id} name={name} time={time} />
+                    ))}
+                </div>
             </div>
         </section>
     )

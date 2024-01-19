@@ -9,6 +9,7 @@ import ServiceTimes from '@components/organisms/ServiceTimes/ServiceTimes'
 import UpcomingEvents from '@components/organisms/UpcomingEvents/UpcomingEvents'
 import BranchLocation from '@components/organisms/BranchLocation/BranchLocation'
 import SendMessage from '@components/organisms/SendMessage/SendMessage'
+import Footer from '@components/organisms/Footer/Footer'
 
 export default function Home() {
     const [showNav, setShowNav] = useState(false)
@@ -31,7 +32,7 @@ export default function Home() {
     }, [])
 
     return (
-        <div className="md:mx-auto h-full md:overflow-x-hidden bg-dim-white">
+        <div className="md:mx-auto h-full md:overflow-x-hidden">
             <MobileFirstPage />
             <div className="relative h-full max-w-[1536px] mx-auto">
                 <Navigation isVisible={showNav} />
@@ -41,6 +42,7 @@ export default function Home() {
                 <UpcomingEvents />
                 <BranchLocation />
                 <SendMessage />
+                <Footer />
             </div>
         </div>
     )
