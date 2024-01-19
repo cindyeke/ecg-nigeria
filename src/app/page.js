@@ -7,6 +7,7 @@ import HomeHeader from '@components/organisms/HomeHeader/HomeHeader'
 import HomeAboutUs from '@components/organisms/HomeAboutUs/HomeAboutUs'
 import ServiceTimes from '@components/organisms/ServiceTimes/ServiceTimes'
 import UpcomingEvents from '@components/organisms/UpcomingEvents/UpcomingEvents'
+import BranchLocation from '@components/organisms/BranchLocation/BranchLocation'
 
 export default function Home() {
     const [showNav, setShowNav] = useState(false)
@@ -37,6 +38,7 @@ export default function Home() {
                 <HomeAboutUs />
                 <ServiceTimes />
                 <UpcomingEvents />
+                <BranchLocation />
             </div>
         </div>
     )
