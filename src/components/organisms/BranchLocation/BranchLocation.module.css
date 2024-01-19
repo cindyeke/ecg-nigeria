@@ -1,5 +1,5 @@
 .branches-info-section {
-    @apply w-[250px] h-[150px] px-6 rounded-[10px] border-2 border-teal-300 bg-dim-white;
+    @apply w-[250px] h-[150px] px-6 rounded-[10px] border-2 border-teal-300 bg-white;
     @apply flex absolute top-1/2 transform -translate-y-1/2 left-1/2 -translate-x-1/2;
     @apply xs-sm:w-9/12 xs-sm:h-[170px];
     @apply md:w-[600px];

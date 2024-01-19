@@ -1,7 +1,7 @@
 .nav {    
     transition: opacity 0.3s ease, transform 0.3s ease, height 0.4s ease-in;
     @apply opacity-0 -translate-y-full;
-    @apply h-[80px] fixed top-0 left-0 z-[1000] w-full bg-off-white flex flex-col overflow-hidden;
+    @apply h-[80px] fixed top-0 left-0 z-[1000] w-full bg-dim-white flex flex-col overflow-hidden;
     @apply md:max-w-[1536px] md:mx-auto md:left-auto;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
