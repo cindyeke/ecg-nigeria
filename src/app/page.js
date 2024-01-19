@@ -8,6 +8,7 @@ import HomeAboutUs from '@components/organisms/HomeAboutUs/HomeAboutUs'
 import ServiceTimes from '@components/organisms/ServiceTimes/ServiceTimes'
 import UpcomingEvents from '@components/organisms/UpcomingEvents/UpcomingEvents'
 import BranchLocation from '@components/organisms/BranchLocation/BranchLocation'
+import SendMessage from '@components/organisms/SendMessage/SendMessage'
 
 export default function Home() {
     const [showNav, setShowNav] = useState(false)
@@ -39,6 +40,7 @@ export default function Home() {
                 <ServiceTimes />
                 <UpcomingEvents />
                 <BranchLocation />
+                <SendMessage />
             </div>
         </div>
     )
