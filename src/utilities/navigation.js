@@ -7,10 +7,10 @@ export const navigationLinks = [
         label: 'Branches',
         url: '/branches',
     },
-    {
-        label: 'Giving',
-        url: '/giving',
-    },
+    // {
+    //     label: 'Giving',
+    //     url: '/giving',
+    // },
     {
         label: 'Contact Us',
         url: '/contactus',

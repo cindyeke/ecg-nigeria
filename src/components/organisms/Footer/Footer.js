@@ -7,14 +7,17 @@ import InstagramIcon from '@svgs/instagram-icon.svg'
 import styles from './Footer.module.css'
 
 const Footer = () => {
+    const cities = branchesInformation.flatMap((branch) => branch.cities)
+    console.log({cities})
+
     return (
         <footer className={styles.footer}>
             <div className={styles['footer-first-section']}>
                 <span className={styles.title}>Contact</span>
                 <div className={styles['footer-branch-info']}>
-                    {branchesInformation.map(({ id, name, phoneNumbers }) => (
+                    {cities.map(({ name, phoneNumbers }) => (
                         <FooterBranchInformation
-                            key={id}
+                            key={name.trim().toLowerCase()}
                             name={name}
                             phoneNumbers={phoneNumbers}
                         />

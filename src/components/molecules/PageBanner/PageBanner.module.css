@@ -1,0 +1,5 @@
+.diagonal-section {
+    @apply bg-teal-300 w-full h-72 pt-10 flex items-center justify-center text-dim-white text-2xl;
+    @apply lg:h-96;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+}
