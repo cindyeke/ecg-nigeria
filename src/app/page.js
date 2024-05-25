@@ -10,6 +10,7 @@ import UpcomingEvents from '@components/organisms/UpcomingEvents/UpcomingEvents'
 import BranchLocation from '@components/organisms/BranchLocation/BranchLocation'
 import SendMessage from '@components/organisms/SendMessage/SendMessage'
 import Footer from '@components/organisms/Footer/Footer'
+import Layout from '@components/template/Layout'
 
 export default function Home() {
     const [showNav, setShowNav] = useState(false)
@@ -34,16 +35,16 @@ export default function Home() {
     return (
         <div className="md:mx-auto h-full md:overflow-x-hidden">
             <MobileFirstPage />
-            <div className="relative h-full max-w-[1536px] mx-auto">
+            <Layout>
                 <Navigation isVisible={showNav} />
                 <HomeHeader className="!hidden md:!flex" />
                 <HomeAboutUs />
                 <ServiceTimes />
-                <UpcomingEvents />
+                {/* <UpcomingEvents />
                 <BranchLocation />
                 <SendMessage />
-                <Footer />
-            </div>
+                <Footer /> */}
+            </Layout>
         </div>
     )
 }
