@@ -8,7 +8,6 @@ import styles from './Footer.module.css'
 
 const Footer = () => {
     const cities = branchesInformation.flatMap((branch) => branch.cities)
-    console.log({cities})
 
     return (
         <footer className={styles.footer}>

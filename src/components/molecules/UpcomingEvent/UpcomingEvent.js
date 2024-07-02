@@ -1,11 +1,11 @@
 import Location from '@components/molecules/Location/Location'
 import SeparatorLine from '../SeparatorLine/SeparatorLine'
 import styles from '@components/organisms/UpcomingEvents/UpcomingEvents.module.css'
+import Card from '@components/organisms/Card/Card'
 
 const UpcomingEvent = () => {
     return (
-        <div className={styles['upcoming-event']}>
-            <span className="bg-teal-300 block h-[8px]"></span>
+        <Card>
             <div className={styles['content-wrapper']}>
                 <div className="flex items-start justify-between">
                     <div className={styles['date-wrapper']}>
@@ -22,7 +22,7 @@ const UpcomingEvent = () => {
                 name="Abuja"
                 className="px-5 xs:px-8 xs-sm:px-10 md:!capitalize md:px-6 lg:px-10"
             />
-        </div>
+        </Card>
     )
 }
 

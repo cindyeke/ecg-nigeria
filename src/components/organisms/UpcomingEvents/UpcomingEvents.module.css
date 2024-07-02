@@ -12,13 +12,6 @@
     @apply 2xl:gap-x-10 2xl:mt-20;
 }
 
-.upcoming-event {
-    @apply bg-dim-white overflow-hidden pb-6;
-    @apply rounded-[10px];
-    @apply xs:pb-10;
-    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-}
-
 .content-wrapper {
     @apply mb-5 pt-[35px] px-5 text-blue-600 h-[270px] flex flex-col justify-between;
     @apply xs:px-8 xs:pt-[60px] xs:h-[350px];
