@@ -6,7 +6,7 @@ import Navigation from '@components/organisms/Navigation/Navigation'
 import PageBanner from '@components/molecules/PageBanner/PageBanner'
 import Footer from '@components/organisms/Footer/Footer'
 
-const Layout = ({ children }) => {
+const Layout = ({ children, hasPageBanner = true }) => {
     const currentPath = usePathname()
     const [showNav, setShowNav] = useState(false)
     const isMobile = useMediaQuery({ query: '(max-width: 767px)' })
@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
     return (
         <div className="relative h-full max-w-[1536px] mx-auto">
             <Navigation isVisible={showNav} path={currentPath} />
-            <PageBanner path={currentPath} />
+            <PageBanner path={currentPath} hasPageBanner={hasPageBanner} />
             {children}
             {currentPath !== '/' && <Footer />}
         </div>

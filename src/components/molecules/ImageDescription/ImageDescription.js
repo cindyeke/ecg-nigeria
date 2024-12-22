@@ -1,21 +1,20 @@
-import Link from 'next/link'
 import Image from 'next/image'
 import DefaultGroupPhoto from '@images/smiling-people.jpeg'
-import styles from './ImageLink.module.css'
+import styles from './ImageDescription.module.css'
 
-const ImageLink = ({ children, src, href }) => {
+const ImageDescription = ({ children, src, alt }) => {
     return (
-        <Link href={href} className={styles.root}>
+        <div className={styles.root}>
             <div className={styles.imageWrapper}>
                 <Image
                     src={src || DefaultGroupPhoto}
                     className={styles.roundedImage}
-                    alt={href}
+                    alt={alt}
                 />
             </div>
             <div className={styles.description}>{children}</div>
-        </Link>
+        </div>
     )
 }
 
-export default ImageLink
+export default ImageDescription

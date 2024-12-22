@@ -1,13 +1,17 @@
 import clsx from 'clsx'
+import { useEffect } from 'react'
 import styles from './Hamburger.module.css'
 
 const Hamburger = ({ isOpen, setIsOpen }) => {
     const toggleHamburger = () => {
         setIsOpen(!isOpen)
-        isOpen
-            ? (document.body.style.overflow = 'visible')
-            : (document.body.style.overflow = 'hidden')
     }
+
+    useEffect(() => {
+        isOpen
+            ? (document.body.style.overflow = 'hidden')
+            : (document.body.style.overflow = 'visible')
+    }, [isOpen])
 
     const transition1 = clsx(
         {

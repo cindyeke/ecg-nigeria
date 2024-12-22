@@ -1,7 +1,8 @@
 import styles from './PageBanner.module.css'
 import { navigationLinks } from '@utilities/navigation'
 
-const PageBanner = ({ path }) => {
+const PageBanner = ({ path, hasPageBanner }) => {
+    if (!hasPageBanner) return <></>
     if (path === '/') return <></>
 
     const { label } = navigationLinks.find(

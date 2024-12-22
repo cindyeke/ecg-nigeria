@@ -23,7 +23,10 @@ const Navigation = ({ isVisible, path }) => {
     return (
         <div className={navContainer}>
             <div className="w-full md:h-full md:items-center md:flex md:justify-between">
-                <Link href="/">
+                <Link
+                    href="/"
+                    className="inline-block"
+                >
                     <Image
                         src={ECGLogo}
                         alt="logo"

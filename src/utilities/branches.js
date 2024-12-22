@@ -14,6 +14,7 @@ export const branchesInformation = [
                 phoneNumbers: ['0809 438 9579'],
                 locationImg: PHLocationMap,
                 churchImg: PHChurch,
+                pageImg: PHChurch,
             },
             {
                 id: 'asaba',
@@ -21,6 +22,7 @@ export const branchesInformation = [
                 address: '3 Ezimgbu Street, off Mummy Road',
                 phoneNumbers: ['0809 438 9579'],
                 locationImg: AbjLocationMap,
+                pageImg: PHChurch,
             },
         ],
     },
@@ -34,6 +36,7 @@ export const branchesInformation = [
                 address: '3 Ezimgbu Street, off Mummy Road',
                 phoneNumbers: ['0708 393 0791', '0809 438 9579'],
                 locationImg: PHLocationMap,
+                pageImg: PHChurch,
             },
         ],
     },
@@ -46,6 +49,7 @@ export const branchesInformation = [
                 name: 'Lagos',
                 address: '3 Ezimgbu Street, off Mummy Road',
                 locationImg: PHLocationMap,
+                pageImg: PHChurch,
             },
         ],
     },
@@ -58,6 +62,7 @@ export const branchesInformation = [
                 name: 'Kaduna',
                 address: '3 Ezimgbu Street, off Mummy Road',
                 locationImg: AbjLocationMap,
+                pageImg: PHChurch,
             },
         ],
     },
@@ -70,6 +75,7 @@ export const branchesInformation = [
                 name: 'Jos',
                 address: '3 Ezimgbu Street, off Mummy Road',
                 locationImg: AbjLocationMap,
+                pageImg: PHChurch,
             },
             {
                 id: 'abuja',
@@ -77,6 +83,7 @@ export const branchesInformation = [
                 address: 'Serob Hotel, Idris Gidado street, Wuye',
                 phoneNumbers: ['0708 393 0791', '0809 438 9579'],
                 locationImg: AbjLocationMap,
+                pageImg: PHChurch,
             },
         ],
     },
@@ -90,7 +97,13 @@ export const branchesInformation = [
                 address: 'Serob Hotel, Idris Gidado street, Wuye',
                 phoneNumbers: ['0708 393 0791', '0809 438 9579'],
                 locationImg: AbjLocationMap,
+                pageImg: PHChurch,
             },
         ],
     },
 ]
+
+export const getCityInformation = (branchId) =>
+    branchesInformation
+        .flatMap((branch) => branch.cities)
+        .find((city) => city.id === branchId)
