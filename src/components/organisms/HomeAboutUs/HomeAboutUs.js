@@ -38,14 +38,14 @@ const HomeAboutUs = () => {
                     imgAlt="apostle-and-wife"
                     containerStyle={secondImageStyle}
                 />
-                <p className={styles['second-description']}>
+                <div className={styles['second-description']}>
                     <span className="text-teal-300 mr-2 md:text-blue-600 md:font-medium">
                         Apostle Wyson Bottoman
                     </span>
                     is the National Pastor of ECG THE JESUS NATION CHURCH
                     NIGERIA under the Leadership of his spiritual father Major 1
                     Prophet Shepherd Bushiri.
-                </p>
+                </div>
             </div>
         </section>
     )

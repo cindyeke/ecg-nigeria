@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { ScrollContainer } from 'react-indiana-drag-scroll'
 import BranchMapImage from '@components/molecules/BranchMapImage/BranchMapImage'
 import BranchAddress from '@components/molecules/BranchAddress/BranchAddress'
@@ -14,27 +14,27 @@ const BranchLocation = () => {
         locationImg: AbjLocationMap,
     })
 
+    const cities = branchesInformation.flatMap((branch) => branch.cities)
+
     return (
         <section className="pt-12 relative h-[500px] md:h-[700px] md:pt-32 xl:h-[800px] bg-dim-white">
             <BranchMapImage selectedBranch={selectedBranch} />
             <ScrollContainer className={styles['branches-info-section']}>
-                {branchesInformation.map(
-                    ({ id, name, address, locationImg }) => (
-                        <BranchAddress
-                            key={id}
-                            label={name}
-                            address={address}
-                            handleSelectedBranch={(branch) =>
-                                setSelectedBranch({ branch, locationImg })
-                            }
-                        />
-                    ),
-                )}
+                {cities.map(({ name, address, locationImg }) => (
+                    <BranchAddress
+                        key={name.trim().toLowerCase()}
+                        label={name}
+                        address={address}
+                        handleSelectedBranch={(branch) =>
+                            setSelectedBranch({ branch, locationImg })
+                        }
+                    />
+                ))}
             </ScrollContainer>
             <div className={styles.description}>
                 <span>
-                    <b>6 branches</b>
-                    across most zones in Nigeria
+                    <b>{cities.length} branches</b>
+                    across all zones in Nigeria
                 </span>
                 <span>
                     <b>1 National branch and office</b>

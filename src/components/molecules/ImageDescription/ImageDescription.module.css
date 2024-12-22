@@ -1,0 +1,22 @@
+.root {
+    @apply relative;
+}
+
+.root:hover .roundedImage,
+.root:active .roundedImage,
+.root:focus .roundedImage {
+    @apply border-4 border-teal-300;
+}
+
+.imageWrapper {
+    @apply relative w-full pb-[100%];
+}
+
+.roundedImage {
+    @apply absolute top-0 left-0 w-full h-full object-cover rounded-[50%];
+    @apply transform transition-all;
+}
+
+.description {
+    @apply bg-teal-300 absolute w-full h-20 bottom-0 flex items-center justify-center rounded;
+}

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import clsx from 'clsx'
 import Hamburger from '@components/molecules/Hamburger/Hamburger'
 import ButtonLink from '@components/atoms/ButtonLink/ButtonLink'
@@ -7,7 +8,7 @@ import ECGLogo from '@images/ecg-logo.png'
 import { navigationLinks } from '@utilities/navigation'
 import styles from './Navigation.module.css'
 
-const Navigation = ({ isVisible }) => {
+const Navigation = ({ isVisible, path }) => {
     const [openHamburger, setOpenHamburger] = useState(false)
     const navContainer = clsx(styles['nav'], {
         [styles['visible']]: isVisible,
@@ -22,11 +23,16 @@ const Navigation = ({ isVisible }) => {
     return (
         <div className={navContainer}>
             <div className="w-full md:h-full md:items-center md:flex md:justify-between">
-                <Image
-                    src={ECGLogo}
-                    alt="logo"
-                    className="mt-[6px] ml-3 w-16 h-16 md:w-20 md:h-20 md:mt-0"
-                />
+                <Link
+                    href="/"
+                    className="inline-block"
+                >
+                    <Image
+                        src={ECGLogo}
+                        alt="logo"
+                        className="mt-[6px] ml-3 w-16 h-16 md:w-20 md:h-20 md:mt-0"
+                    />
+                </Link>
                 <Hamburger
                     isOpen={openHamburger}
                     setIsOpen={setOpenHamburger}
@@ -37,6 +43,11 @@ const Navigation = ({ isVisible }) => {
                             key={navigationLink.label}
                             label={navigationLink.label}
                             href={navigationLink.url}
+                            className={
+                                path === navigationLink.url
+                                    ? 'text-teal-300'
+                                    : ''
+                            }
                         />
                     ))}
                 </div>
