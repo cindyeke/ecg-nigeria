@@ -8,6 +8,7 @@ import BranchLocation from '@components/organisms/BranchLocation/BranchLocation'
 import SendMessage from '@components/organisms/SendMessage/SendMessage'
 import Footer from '@components/organisms/Footer/Footer'
 import Layout from '@components/template/Layout'
+import { homepageFeatureFlags } from '@utilities/features'
 
 export default function Home() {
     return (
@@ -16,10 +17,10 @@ export default function Home() {
             <Layout>
                 <HomeHeader className="!hidden md:!flex" />
                 <HomeAboutUs />
-                <ServiceTimes />
-                <UpcomingEvents />
-                <BranchLocation />
-                <SendMessage />
+                {homepageFeatureFlags.serviceTimes && <ServiceTimes />}
+                {homepageFeatureFlags.upcomingEvents && <UpcomingEvents />}
+                {homepageFeatureFlags.branchesLocation && <BranchLocation />}
+                {homepageFeatureFlags.sendMessage && <SendMessage />}
                 <Footer />
             </Layout>
         </div>

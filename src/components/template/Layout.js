@@ -12,11 +12,6 @@ const Layout = ({ children, hasPageBanner = true }) => {
     const isMobile = useMediaQuery({ query: '(max-width: 767px)' })
 
     useEffect(() => {
-        if (currentPath !== '/') {
-            setShowNav(true)
-            return
-        }
-
         if (isMobile) {
             const handleScroll = () => {
                 const scrollThreshold = 900

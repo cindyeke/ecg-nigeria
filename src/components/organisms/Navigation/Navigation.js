@@ -11,6 +11,7 @@ import styles from './Navigation.module.css'
 const Navigation = ({ isVisible, path }) => {
     const [openHamburger, setOpenHamburger] = useState(false)
     const navContainer = clsx(styles['nav'], {
+        [styles['invisible']]: path === '/',
         [styles['visible']]: isVisible,
         '!h-full !items-start': openHamburger,
     })
@@ -23,10 +24,7 @@ const Navigation = ({ isVisible, path }) => {
     return (
         <div className={navContainer}>
             <div className="w-full md:h-full md:items-center md:flex md:justify-between">
-                <Link
-                    href="/"
-                    className="inline-block"
-                >
+                <Link href="/" className="inline-block">
                     <Image
                         src={ECGLogo}
                         alt="logo"
