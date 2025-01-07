@@ -45,7 +45,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className={styles['copyright-text']}>
-                &#169; Copyright {new Date().getFullYear()} ECG Nigeria
+                &#169; Copyright {new Date().getFullYear()} ECG TJNC Nigeria
             </div>
         </footer>
     )

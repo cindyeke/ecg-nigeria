@@ -42,7 +42,7 @@ const Navigation = ({ isVisible, path }) => {
                             label={navigationLink.label}
                             href={navigationLink.url}
                             className={
-                                path === navigationLink.url
+                                path.startsWith(navigationLink.url)
                                     ? 'text-teal-300'
                                     : ''
                             }

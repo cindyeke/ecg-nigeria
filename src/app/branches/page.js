@@ -6,7 +6,7 @@ import ImageDescription from '@components/molecules/ImageDescription/ImageDescri
 
 export default function Branches() {
     return (
-        <Layout>
+        <Layout hasPageBanner>
             <div className="flex flex-col gap-y-10 my-10 px-5 md:px-10 xl:px-20">
                 {branchesInformation.map(({ id, region, cities }) => (
                     <div key={id} className="mb-5">

@@ -6,7 +6,7 @@ import Navigation from '@components/organisms/Navigation/Navigation'
 import PageBanner from '@components/molecules/PageBanner/PageBanner'
 import Footer from '@components/organisms/Footer/Footer'
 
-const Layout = ({ children, hasPageBanner = true }) => {
+const Layout = ({ children, hasPageBanner = false }) => {
     const currentPath = usePathname()
     const [showNav, setShowNav] = useState(false)
     const isMobile = useMediaQuery({ query: '(max-width: 767px)' })
