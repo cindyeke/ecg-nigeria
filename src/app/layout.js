@@ -16,7 +16,7 @@ const raleway = Raleway({
 })
 
 export const metadata = {
-    title: 'ECG TJNC Nigeria',
+    title: 'ECG Nigeria',
     description: 'Enlightened Christian Gathering TJNC - Nigeria',
 }
 

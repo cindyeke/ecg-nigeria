@@ -1,7 +1,7 @@
-import Layout from "@components/template/Layout"
+import Layout from '@components/template/Layout'
 
 const AboutUs = () => {
-    return <Layout></Layout>
+    return <Layout hasPageBanner></Layout>
 }
 
 export default AboutUs

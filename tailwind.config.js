@@ -35,6 +35,7 @@ module.exports = {
             white: '#FFFFFF',
             'dim-white': '#F8F8F8',
             'off-white': '#F0F0F0',
+            'teal-100': '#CEDEDF',
             'teal-300': '#79B5B8',
             'blue-500': '#0026B9',
             'blue-600': '#142D8C',
