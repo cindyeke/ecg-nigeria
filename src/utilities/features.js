@@ -1,6 +1,6 @@
 export const homepageFeatureFlags = {
     serviceTimes: true,
     upcomingEvents: true,
-    branchesLocation: false,
+    branchesLocation: true,
     sendMessage: true,
 }
