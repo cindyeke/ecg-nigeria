@@ -31,8 +31,7 @@ const BranchPage = ({ branch }) => {
             <div className="px-5 py-20">
                 <div className="max-w-3xl mx-auto text-center">
                     <div className="text-2xl font-bold">
-                        <p>ECG The Jesus Nation Church, {name} branch</p>
-                        <p> is located at {address}</p>
+                        <p>ECG The Jesus Nation Church, {name} branch is located at {address}</p>
                     </div>
                     <p className="max-w-lg mx-auto my-3">{description}</p>
                     {phoneNumbers?.length > 0 && (
@@ -44,7 +43,7 @@ const BranchPage = ({ branch }) => {
                         </p>
                     )}
                 </div>
-                <BranchServices branch={id} />
+                <BranchServices branchId={id} name={name} />
                 {pastors?.length > 0 && <BranchPastors pastors={pastors} />}
             </div>
         </>

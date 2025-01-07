@@ -14,7 +14,7 @@
 
 .content-wrapper {
     @apply mb-5 pt-[35px] px-5 text-blue-600 h-[270px] flex flex-col justify-between;
-    @apply xs:px-8 xs:pt-[60px] xs:h-[350px];
+    @apply xs:px-8 xs:pt-[45px] xs:h-[350px];
     @apply xs-sm:px-10;
     @apply md:px-6;
     @apply lg:px-10;
@@ -22,7 +22,7 @@
 
 .date-wrapper {
     @apply flex flex-col bg-blue-600/50 rounded-[50%] w-[60px] h-[60px] justify-center items-center;
-    @apply xs:w-[75px] xs:h-[75px] 
+    @apply xs:w-[75px] xs:h-[75px];
 }
 
 .date-wrapper span:first-child {
@@ -38,7 +38,7 @@
 .event-description {
     @apply text-xl font-light w-[125px] line-clamp-[7];
     @apply xs:text-2xl xs:w-[170px];
-    @apply xs-sm:w-[200px] xs-sm:text-3xl xs-sm:-mt-2 xs-sm:line-clamp-6;
+    @apply xs-sm:w-[200px] xs-sm:line-clamp-6;
     @apply min-[500px]:mt-[2px] min-[500px]:w-[312px];
     @apply sm:w-[380px] sm:line-clamp-5;
     @apply md:mt-[-4px] md:w-[200px];

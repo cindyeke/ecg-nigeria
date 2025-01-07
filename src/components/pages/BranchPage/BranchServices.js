@@ -2,8 +2,8 @@ import Image from 'next/image'
 import { branchServices } from '@utilities/branchServices'
 import { icons } from '@utilities/icons'
 
-const BranchServices = ({ branch }) => {
-    const services = branchServices[branch]
+const BranchServices = ({ branchId, name }) => {
+    const services = branchServices[branchId]
 
     return (
         <div className="my-16 max-w-5xl mx-auto">
@@ -11,8 +11,8 @@ const BranchServices = ({ branch }) => {
                 <div className="text-3xl font-bold mb-3">Our Services</div>
                 <div className="max-w-3xl mx-auto">
                     We warmly invite you to join us for our services at ECG TJNC
-                    Port Harcourt. It’s our pleasure to welcome you and share in
-                    this uplifting experience together.
+                    <span className="ml-1">{name}</span>. It’s our pleasure to
+                    welcome you and share in this uplifting experience together.
                 </div>
             </div>
             <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
