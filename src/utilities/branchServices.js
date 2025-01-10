@@ -5,24 +5,40 @@ export const branchServices = {
             iconId: 'sunday',
             name: 'Sunday Service',
             description:
-                'Our sunday services consists of prayers, preaching, counseling, and connecting with our spiritual father',
+                'Join us this Sunday for uplifting worship, a powerful message, and fellowship. All are welcome!',
             dateTime: 'Sundays, 9 AM',
         },
         {
             id: 2,
-            iconId: 'wof',
-            name: 'Women On Fire Meetings',
+            iconId: 'handshake',
+            name: 'Youth Magnet Service',
             description:
-                'A women gathering - praying, counseling, aiding, brainstorming',
-            dateTime: 'Saturdays, 2 PM',
+                'Join us for our youth service, where young minds connect, share, and grow together in faith!',
+            dateTime: 'Tuesdays, 5 PM',
         },
         {
             id: 3,
             iconId: 'sunday',
-            name: 'Youth Magnet Service',
+            name: 'Thursday Midweek Service',
             description:
-                'Our sunday services consists of prayers, preaching, counseling, and connecting with our spiritual father',
-            dateTime: 'Tuesdays, 5 PM',
+                'Join us every Thursday for our midweek service, a time of worship, prayer, and spiritual growth!',
+            dateTime: 'Thursdays, 5:30 PM',
+        },
+        {
+            id: 4,
+            iconId: 'meeting',
+            name: 'Stewardship Meeting',
+            description:
+                'Join us for our stewardship meeting, a time for growth, training, and equipping for service!',
+            dateTime: 'Saturdays, 10 AM',
+        },
+        {
+            id: 5,
+            iconId: 'wof',
+            name: 'Women On Fire Meeting',
+            description:
+                'A women gathering - praying, counseling, aiding, brainstorming',
+            dateTime: 'Saturdays',
         },
     ],
     asaba: [],
