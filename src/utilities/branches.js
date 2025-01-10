@@ -14,9 +14,9 @@ export const branchesInformation = [
                 phoneNumbers: ['0803 674 7620', '0805 878 5840'],
                 locationImg: PHLocationMap,
                 churchImg:
-                    'https://res.cloudinary.com/dzkevoeey/image/upload/v1736535503/ph-church_xzf7ni.webp',
+                    'https://res.cloudinary.com/dzkevoeey/image/upload/v1736537456/ph-church_yxeubc.webp',
                 pageImg:
-                    'https://res.cloudinary.com/dzkevoeey/image/upload/v1736534923/ph-hero-img_gke2mq.webp',
+                    'https://res.cloudinary.com/dzkevoeey/image/upload/v1736537456/ph-banner_e0mtbi.webp',
                 description:
                     'Come and join us to worship at church every sundays as we connect to our spiritual father Prophet Shepherd Bushiri',
             },
