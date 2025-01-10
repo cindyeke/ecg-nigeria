@@ -16,7 +16,7 @@ const BranchPage = ({ branch }) => {
     const pastors = branchPastors[id]
     return (
         <>
-            <div className="h-full w-full">
+            <div className="h-full w-full relative">
                 <div className="w-full h-full bg-blue-600/80 absolute pt-[80px] z-50">
                     <div className="absolute bottom-3 right-0 px-3 text-base text-off-white capitalize font-secondary">
                         ECG The Jesus Nation Church, {name} branch
@@ -26,7 +26,7 @@ const BranchPage = ({ branch }) => {
                     src={coverImg}
                     alt={id}
                     className="h-full object-cover"
-                    layout="fill"
+                    fill
                 />
             </div>
             <div className="px-5 py-20">
