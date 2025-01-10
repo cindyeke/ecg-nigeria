@@ -2,7 +2,7 @@ import Image from 'next/image'
 import DefaultGroupPhoto from '@images/smiling-people.jpeg'
 import styles from './ImageDescription.module.css'
 
-const ImageDescription = ({ children, src, alt = '' }) => {
+const ImageDescription = ({ children, src, alt }) => {
     return (
         <div className={styles.root}>
             <div className={styles.imageWrapper}>
@@ -10,6 +10,7 @@ const ImageDescription = ({ children, src, alt = '' }) => {
                     src={src || DefaultGroupPhoto}
                     className={styles.roundedImage}
                     alt={alt}
+                    fill
                 />
             </div>
             <div className={styles.description}>{children}</div>

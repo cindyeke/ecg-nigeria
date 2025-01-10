@@ -17,7 +17,8 @@ const raleway = Raleway({
 
 export const metadata = {
     title: 'ECG Nigeria',
-    description: 'Enlightened Christian Gathering TJNC - Nigeria',
+    description:
+        'Enlightened Christian Gathering The Jesus Nation Church in Nigeria',
 }
 
 export default function RootLayout({ children }) {

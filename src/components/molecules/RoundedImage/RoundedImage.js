@@ -1,5 +1,4 @@
 import clsx from 'clsx'
-import Image from 'next/image'
 
 const RoundedImage = ({ containerStyle, imgStyle, imgSrc, imgAlt }) => {
     return (
@@ -9,7 +8,7 @@ const RoundedImage = ({ containerStyle, imgStyle, imgSrc, imgAlt }) => {
                 'md:rounded-[50%] md:overflow-hidden md:absolute',
             )}
         >
-            <Image
+            <img
                 src={imgSrc}
                 alt={imgAlt}
                 className={clsx(imgStyle, 'w-full md:h-full md:object-cover')}

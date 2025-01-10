@@ -1,7 +1,4 @@
-import Image from 'next/image'
 import RoundedImage from '@components/molecules/RoundedImage/RoundedImage'
-import Prophet from '@images/prophet.jpg'
-import Apostle from '@images/apostle.png'
 import styles from './HomeAboutUs.module.css'
 
 const firstImageStyle =
@@ -27,15 +24,15 @@ const HomeAboutUs = () => {
                     is still speaking today.
                 </div>
                 <RoundedImage
-                    imgSrc={Prophet}
-                    imgAlt="prophet-and-wife"
+                    imgSrc="https://res.cloudinary.com/dzkevoeey/image/upload/v1736537848/ecgfounders_kvxqau.webp"
+                    imgAlt="ecgfounders"
                     containerStyle={firstImageStyle}
                 />
             </div>
             <div className={styles['second-section']}>
                 <RoundedImage
-                    imgSrc={Apostle}
-                    imgAlt="apostle-and-wife"
+                    imgSrc="https://res.cloudinary.com/dzkevoeey/image/upload/v1736539384/apostlewyson_gyyo9m.webp"
+                    imgAlt="apostlewyson"
                     containerStyle={secondImageStyle}
                 />
                 <div className={styles['second-description']}>

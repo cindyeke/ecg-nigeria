@@ -16,7 +16,11 @@ export default function Branches() {
                         />
                         <div className="gap-y-10 gap-5 grid sm:grid-cols-2 lg:grid-cols-3 md:gap-x-10 my-6">
                             {cities.map(({ name, churchImg, id }) => (
-                                <Link key={name} href={`/branches/${id}`}>
+                                <Link
+                                    key={name}
+                                    href={`/branches/${id}`}
+                                    className="pointer-events-none"
+                                >
                                     <ImageDescription
                                         src={churchImg}
                                         id={id}
