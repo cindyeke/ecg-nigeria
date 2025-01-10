@@ -10,7 +10,7 @@ import styles from './BranchLocation.module.css'
 
 const BranchLocation = () => {
     const [selectedBranch, setSelectedBranch] = useState({
-        branch: 'Abuja',
+        label: 'Port Harcourt',
         locationImg: AbjLocationMap,
     })
 
@@ -25,8 +25,9 @@ const BranchLocation = () => {
                         key={name.trim().toLowerCase()}
                         label={name}
                         address={address}
-                        handleSelectedBranch={(branch) =>
-                            setSelectedBranch({ branch, locationImg })
+                        selected={name === selectedBranch.label}
+                        handleSelectedBranch={(label) =>
+                            setSelectedBranch({ label, locationImg })
                         }
                     />
                 ))}
