@@ -12,7 +12,7 @@ export const pastors = {
             id: 2,
             name: 'Pastor Michael Saliu',
             position: 'Pastor, ECG TJNC Port Harcourt',
-            img: 'https://res.cloudinary.com/dzkevoeey/image/upload/v1736537456/ph-pst-mike_xcddgs.webp',
+            img: 'https://res.cloudinary.com/dzkevoeey/image/upload/v1737979528/ph-pst-mike_bvr7m0.webp',
         },
         {
             id: 3,
