@@ -14,17 +14,18 @@ export const branchesInformation = [
                 phoneNumbers: ['0803 674 7620', '0805 878 5840'],
                 locationImg: PHLocationMap,
                 churchImg:
-                    'https://res.cloudinary.com/dzkevoeey/image/upload/v1736537456/ph-church_yxeubc.webp',
+                    'https://res.cloudinary.com/dzkevoeey/image/upload/v1737978878/ph-branch_cjb0dx.webp',
                 pageImg:
-                    'https://res.cloudinary.com/dzkevoeey/image/upload/v1736537456/ph-banner_e0mtbi.webp',
+                    'https://res.cloudinary.com/dzkevoeey/image/upload/v1737978518/ph-banner_bupe8q.webp',
                 description:
                     'Come and join us to worship at church every sundays as we connect to our spiritual father Prophet Shepherd Bushiri',
             },
             {
-                id: 'asaba',
-                name: 'Asaba',
-                address: '3 Ezimgbu Street, off Mummy Road',
+                id: 'akwaibom',
+                name: 'Akwa Ibom',
+                address: 'coming soon',
                 phoneNumbers: ['080x xxx xxxx'],
+                locationImg: PHLocationMap,
                 locationImg: AbjLocationMap,
                 pageImg: PHChurch,
                 description: '',
@@ -33,14 +34,23 @@ export const branchesInformation = [
     },
     {
         id: 2,
-        region: 'South East',
+        region: 'North Central',
         cities: [
             {
-                id: 'owerri',
-                name: 'Owerri',
-                address: '3 Ezimgbu Street, off Mummy Road',
+                id: 'abuja',
+                name: 'Abuja',
+                address: 'Serob Hotel, Idris Gidado street, Wuye',
                 phoneNumbers: ['080x xxx xxxx', '080x xxx xxxx'],
-                locationImg: PHLocationMap,
+                locationImg: AbjLocationMap,
+                pageImg: PHChurch,
+                description: '',
+            },
+            {
+                id: 'jos',
+                name: 'Jos',
+                address: 'coming soon',
+                phoneNumbers: ['080x xxx xxxx', '080x xxx xxxx'],
+                locationImg: AbjLocationMap,
                 pageImg: PHChurch,
                 description: '',
             },
@@ -48,12 +58,21 @@ export const branchesInformation = [
     },
     {
         id: 3,
-        region: 'South West',
+        region: 'South East',
         cities: [
             {
-                id: 'lagos',
-                name: 'Lagos',
-                address: '3 Ezimgbu Street, off Mummy Road',
+                id: 'owerri',
+                name: 'Owerri',
+                address: 'coming soon',
+                phoneNumbers: ['080x xxx xxxx', '080x xxx xxxx'],
+                locationImg: PHLocationMap,
+                pageImg: PHChurch,
+                description: '',
+            },
+            {
+                id: 'enugu',
+                name: 'Enugu',
+                address: 'coming soon',
                 phoneNumbers: ['080x xxx xxxx', '080x xxx xxxx'],
                 locationImg: PHLocationMap,
                 pageImg: PHChurch,
@@ -63,14 +82,14 @@ export const branchesInformation = [
     },
     {
         id: 4,
-        region: 'North West',
+        region: 'South West',
         cities: [
             {
-                id: 'kaduna',
-                name: 'Kaduna',
-                address: '3 Ezimgbu Street, off Mummy Road',
+                id: 'lagos',
+                name: 'Lagos',
+                address: 'coming soon',
                 phoneNumbers: ['080x xxx xxxx', '080x xxx xxxx'],
-                locationImg: AbjLocationMap,
+                locationImg: PHLocationMap,
                 pageImg: PHChurch,
                 description: '',
             },
@@ -78,21 +97,12 @@ export const branchesInformation = [
     },
     {
         id: 5,
-        region: 'North Central',
+        region: 'North West',
         cities: [
             {
-                id: 'jos',
-                name: 'Jos',
-                address: '3 Ezimgbu Street, off Mummy Road',
-                phoneNumbers: ['080x xxx xxxx', '080x xxx xxxx'],
-                locationImg: AbjLocationMap,
-                pageImg: PHChurch,
-                description: '',
-            },
-            {
-                id: 'abuja',
-                name: 'Abuja',
-                address: 'Serob Hotel, Idris Gidado street, Wuye',
+                id: 'kaduna',
+                name: 'Kaduna',
+                address: 'coming soon',
                 phoneNumbers: ['080x xxx xxxx', '080x xxx xxxx'],
                 locationImg: AbjLocationMap,
                 pageImg: PHChurch,
@@ -107,7 +117,7 @@ export const branchesInformation = [
             {
                 id: 'adamawa',
                 name: 'Adamawa',
-                address: 'Serob Hotel, Idris Gidado street, Wuye',
+                address: 'coming soon',
                 phoneNumbers: ['080x xxx xxxx', '080x xxx xxxx'],
                 locationImg: AbjLocationMap,
                 pageImg: PHChurch,
